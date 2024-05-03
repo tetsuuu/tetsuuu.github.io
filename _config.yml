@@ -1,0 +1,29 @@
+title: tetsuuu's Profile
+description: 様々な会社で落穂拾いしていたら色々なことをやっていた人のページです。
+markdown: kramdown
+url: "https://tetsuuu.github.io"
+image: /assets/icons/profile.png
+
+# for atom feed
+author:
+  name: tetsuuu / Tetsu Kinoshita
+  email: tkinoshita29@gmail.com
+
+plugins:
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+collections_dir: collections
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      permalink: /posts/:title/
+exclude: ["LICENSE", "README.md", "feed.xml", "local", "sitemap.xml"]
